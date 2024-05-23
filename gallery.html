@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>FoodCheap</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- font awesome cdn -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- fonts -->
+        <link rel = "stylesheet" href = "font/fonts.css">
+        <!-- normalize css -->
+        <link rel = "stylesheet" href = "css/normalize.css">
+        <!-- custom css -->
+        <link rel = "stylesheet" href = "css/utility.css">
+        <link rel = "stylesheet" href = "css/style.css">
+        <link rel = "stylesheet" href = "css/responsive.css">
+    </head>
+    <body>
+        <div id="main">
+            <!-- navbar  -->
+        <nav class = "navbar">
+            <div class = "container flex">
+                <a href = "home.html" class = "site-brand">
+                    Trip<span>Cheap</span>
+                </a>
+
+                <button type = "button" id = "navbar-show-btn" class = "flex">
+                    <i class = "fas fa-bars"></i>
+                </button>
+                <div id = "navbar-collapse">
+                    <button type = "button" id = "navbar-close-btn" class = "flex">
+                        <i class = "fas fa-times"></i>
+                    </button>
+                    <ul class = "navbar-nav">
+                        <li class = "nav-item">
+                            <a href = "home.html" class = "nav-link">Home</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "gallery.html" class = "nav-link">Restaurant</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "gallery.html" class = "nav-link">Dishes</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "gallery.html" class = "nav-link">Chief</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "blog.html" class = "nav-link">BLog</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "about.html" class = "nav-link">About</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "contact.html" class = "nav-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- end of navbar  -->
+            
+<!--================================================================================================================================================================================================================-->
+<!--================================================================================================================================================================================================================-->
+            <!-- header -->
+            <header class = "flex header-sm">
+                <div class = "container">
+                    <div class = "header-title">
+                        <h1>Gallery</h1>
+                        <p>To Travel Is To Live !</p>
+                    </div>
+                </div>
+            </header>
+            <!-- header -->
+
+            <!-- gallery section -->
+            <div id = "gallery" class = "py-4">
+                <div class = "container">
+                    <div class = "gallery-row">
+                        <div class = "gallery-item shadow js-gallery-img1">
+                            <img src = "images/gallery-3.jpg" alt = "gallery img">
+                            <span class = "zoom-icon">
+                                <i class = "fas fa-search-plus"></i>
+                            </span>
+                        </div>
+                        <div class = "gallery-item shadow js-gallery-img2">
+                            <img src = "images/gallery-8.jpg" alt = "gallery img">
+                            <span class = "zoom-icon">
+                                <i class = "fas fa-search-plus"></i>
+                            </span>
+                        </div>    
+                        <div class = "gallery-item shadow js-gallery-img3">
+                            <img src = "images/Header-ba-na-hill-1.jpg" alt = "gallery img">
+                            <span class = "zoom-icon">
+                                <i class = "fas fa-search-plus"></i>
+                            </span>
+                        </div>
+                        <div class = "gallery-item shadow js-gallery-img4">
+                            <img src = "images/Header-ba-na-hill-.jpg" alt = "gallery img">
+                            <span class = "zoom-icon">
+                                <i class = "fas fa-search-plus"></i>
+                            </span>
+                        </div>
+                        <div class = "gallery-item shadow js-gallery-img5">
+                            <img src = "images/Header-unknow3.jpg" alt = "gallery img">
+                            <span class = "zoom-icon">
+                                <i class = "fas fa-search-plus"></i>
+                            </span>
+                        </div>
+                        <div class = "gallery-item shadow js-gallery-img6">
+                            <img src = "images/Header-unknow.jpg" alt = "gallery img">
+                            <span class = "zoom-icon">
+                                <i class = "fas fa-search-plus"></i>
+                            </span>
+                        </div>
+                        <div class = "gallery-item shadow js-gallery-img7">
+                            <img src = "images/Header-chùa 1 cột.jpg" alt = "gallery img">
+                            <span class = "zoom-icon">
+                                <i class = "fas fa-search-plus"></i>
+                            </span>
+                        </div>
+                        <div class = "gallery-item shadow js-gallery-img8">
+                            <img src = "images/Header-unknow2.jpg" alt = "gallery img">
+                            <span class = "zoom-icon">
+                                <i class = "fas fa-search-plus"></i>
+                            </span>
+                        </div>
+                        <div class = "gallery-item shadow js-gallery-img9">
+                            <img src = "images/Header-ruong bac thang 1.jpg" alt = "gallery img">
+                            <span class = "zoom-icon">
+                                <i class = "fas fa-search-plus"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end of gallery section -->
+
+            <!-- img modal -->
+            <div id = "img-modal-box">
+                <div id = "img-modal">
+                    <button type = "button" id = "modal-close-btn" class = "flex">
+                        <i class = "fas fa-times"></i>
+                    </button>
+                    <button type = "button" id = "prev-btn" class = "flex">
+                        <i class = "fas fa-chevron-left"></i>
+                    </button>
+                    <button type = "button" id = "next-btn" class = "flex">
+                        <i class = "fas fa-chevron-right"></i>
+                    </button>
+                    <img src = "images/gallery-1.jpg">
+                </div>
+            </div>
+            <!-- end of img modal -->
+
+            <!-- popular places section -->
+            <section id = "popular" class = "py-4">
+                <div class = "title-wrap">
+                    <span class = "sm-title mid-text">know about some cool destination</span>
+                    <h2 class = "lg-title">Popular Places</h2>
+                </div>
+
+                <div class = "popular-row">
+                    <div class = "popular-item shadow js-second-item">
+                        <img src = "images/Body-tam cốc bích động 1.jpg" alt = "">
+                        <div>
+                            <span class="first-text">
+                                <i class="icon-first-text fas fa-spa"></i>
+                                Tam Cốc Bích Động, Ninh Bình
+                            </span>
+                            <ul class = "rating flex">
+                                <li><i class = "icon-star fas fa-star"></i></li>
+                                <li><i class = "icon-star fas fa-star"></i></li>
+                                <li><i class = "icon-star fas fa-star"></i></li>
+                                <li><i class = "icon-star fas fa-star"></i></li>
+                                <li><i class = "icon-star fas fa-star-half-alt"></i></li>
+                                <li class="text-review">&nbsp;457 reviews</li>
+                            </ul>
+                            <p class = "second-text">Thả hồn theo những dãy núi đá vôi với nhiều hang động cữ thế nối tiếp nhau đưa bạn đi từ khung trời này tới khung trời khác, cảnh đẹp nối liền nhau bởi dòng sông Ngô Đồng xinh đẹp nhẹ nhàng. Một trải nghiệm không thể quên.</p>
+                        </div>
+                    </div>
+
+                    <div class = "popular-item shadow js-second-item">
+                        <img src = "images/Body-son doong cave1.1.jpg" alt = "">
+                        <div>
+                            <span class="first-text">
+                                <i class="icon-first-text fas fa-spa"></i>
+                                Động Sơn Đoòng, Quảng Bình
+                            </span>
+                            <ul class = "rating flex">
+                                <li><i class = "icon-star fas fa-star"></i></li>
+                                <li><i class = "icon-star fas fa-star"></i></li>
+                                <li><i class = "icon-star fas fa-star"></i></li>
+                                <li><i class = "icon-star fas fa-star"></i></li>
+                                <li><i class="icon-star far fa-star"></i></li>
+                                <li class="text-review">&nbsp;349 reviews</li>
+                            </ul>
+                            <p class = "second-text">Được mệnh danh là "Thiên đường dưới đất", đặt chân đến nơi đây sẽ khiến bạn choáng ngợp trước khung cảnh hùng vĩ được thiên niên tô vẽ nên. Bên trong hang là cả một thế giới bí ẩn, hấp dẫn và đầy quyến rũ đáng để trải nghiệm.</p>
+                        </div>
+                    </div>
+
+                    <div class = "popular-item shadow js-second-item">
+                        <img src = "images/Body-thác bản giốc1.jpg" alt = "">
+                        <div>
+                            <span class="first-text">
+                                <i class="icon-first-text fas fa-spa"></i>
+                                Thác Bản Giốc, Cao Bằng
+                            </span>
+                            <ul class = "rating flex">
+                                <li><i class = "icon-star fas fa-star"></i></li>
+                                <li><i class = "icon-star fas fa-star"></i></li>
+                                <li><i class = "icon-star fas fa-star"></i></li>
+                                <li><i class = "icon-star fas fa-star"></i></li>
+                                <li><i class="icon-star fas fa-star"></i></li>
+                                <li class="text-review">&nbsp;501 reviews</li>
+                            </ul>
+                            <p class = "second-text">Một thác nước tuyệt vời, vẻ đẹp ở nơi đây sẵn sàng say lòng bất cứ ai mới đặt chân tới. Đến đây vào những ngày nắng tháng Ba, tháng Tư, bạn sẽ cực kì thích thú với cầu vồng nước lung linh được tạo bởi hơi nước bắn ra dưới màu nắng.</p>
+                        </div>
+                    </div>
+
+                    <div class = "popular-item shadow js-second-item">
+                        <img src = "images/Body-bai bien nha trang.jpg" alt = "">
+                        <div>
+                            <span class="first-text">
+                                <i class="icon-first-text fas fa-spa"></i>
+                                Bãi Biển Nha Trang, Nha Trang
+                            </span>
+                            <ul class = "rating flex">
+                                <li><i class = "icon-star fas fa-star"></i></li>
+                                <li><i class = "icon-star fas fa-star"></i></li>
+                                <li><i class = "icon-star fas fa-star"></i></li>
+                                <li><i class = "icon-star fas fa-star"></i></li>
+                                <li><i class = "icon-star fas fa-star-half-alt"></i></li>
+                                <li class="text-review">&nbsp;468 reviews</li>
+                            </ul>
+                            <p class = "second-text">Đến với nơi đây, mọi cái nóng nực của mùa Hè sẽ được xoá tan khi đến với nơi đây. Bãi cát trắng dài thơ mộng cùng với làn nước xanh ngắt, gợn sóng nhẹ nhẹ, khung cảnh tuyệt vời như vậy đủ để bạn "Take a photo" ngay lập tức.</p>
+                        </div>
+                    </div>
+
+                    <div class = "popular-item shadow js-second-item">
+                        <img src = "images/Body-Chùa thiên mụ.jpg" alt = "">
+                        <div>
+                            <span class="first-text">
+                                <i class="icon-first-text fas fa-spa"></i>
+                                Chùa Thiên Mụ, Huế
+                            </span>
+                            <ul class = "rating flex">
+                                <li><i class = "icon-star fas fa-star"></i></li>
+                                <li><i class = "icon-star fas fa-star"></i></li>
+                                <li><i class = "icon-star fas fa-star"></i></li>
+                                <li><i class = "icon-star fas fa-star"></i></li>
+                                <li><i class="icon-star far fa-star"></i></li>
+                                <li class="text-review">&nbsp;352 reviews</li>
+                            </ul>
+                            <p class = "second-text">Nằm ngay bên bờ sông Hương, một ngôi chùa cổ kính với nét kiến trúc xưa cùng phong cảnh xung quanh rất nên thơ, hữu tình. Nổi tiếng với tiếng chuông thanh cao, ngân nga khiến cho du khách tĩnh tâm giữa không gian Phật giáo.</p>
+                        </div>
+                    </div>
+
+                    <div class = "popular-item shadow js-second-item">
+                        <img src = "images/Body-dai-noi-hue.jpg" alt = "">
+                        <div>
+                            <span class="first-text">
+                                <i class="icon-first-text fas fa-spa"></i>
+                                Đại Nội Kinh Thành Huế, Huế
+                            </span>
+                            <ul class = "rating flex">
+                                <li><i class = "icon-star fas fa-star"></i></li>
+                                <li><i class = "icon-star fas fa-star"></i></li>
+                                <li><i class = "icon-star fas fa-star"></i></li>
+                                <li><i class = "icon-star fas fa-star"></i></li>
+                                <li><i class = "icon-star fas fa-star-half-alt"></i></li>
+                                <li class="text-review">&nbsp;456 reviews</li>
+                            </ul>
+                            <p class = "second-text">Cố đô xinh đẹp của Việt Nam, mang trong mình một nét đẹp rất riêng, rất khác biệt với nét trầm tư sâu lắng vốn có của nó. Nơi đây không chỉ ghi đậm dấu ấn lịch sử của dân tộc, khu Đại Nội Huế còn nổi tiếng với nét đẹp kiến trúc đáng tự hào.</p>
+                        </div>
+                    </div>
+
+                    <div class = "popular-item shadow js-second-item">
+                        <img src = "images/Body-Doi hoa Da lat.jpg" alt = "">
+                        <div>
+                            <span class="first-text">
+                                <i class="icon-first-text fas fa-spa"></i>
+                                Đồi Hoa Đà Lạt, Đà Lạt
+                            </span>
+                            <ul class = "rating flex">
+                                <li><i class = "icon-star fas fa-star"></i></li>
+                                <li><i class = "icon-star fas fa-star"></i></li>
+                                <li><i class = "icon-star fas fa-star"></i></li>
+                                <li><i class = "icon-star fas fa-star"></i></li>
+                                <li><i class="icon-star fas fa-star"></i></li>
+                                <li class="text-review">&nbsp;532 reviews</li>
+                            </ul>
+                            <p class = "second-text">Hoa và Hoa - Một địa điểm tuyệt để check in giữa vạn loại hoa. Không những thế, nơi đây còn là một địa điêm tuyệt vời để tỏ tình. Với khung cảnh lãng mạng, chắc chắn sẽ không làm bạn thất vọng khi tỏ tình người yêu mình tại đây.</p>
+                        </div>
+                    </div>
+
+                    <div class = "popular-item shadow js-second-item">
+                        <img src = "images/Body-Ha long bay.jpg" alt = "">
+                        <div>
+                            <span class="first-text">
+                                <i class="icon-first-text fas fa-spa"></i>
+                                Vịnh Hạ Long, Quảng Ninh
+                            </span>
+                            <ul class = "rating flex">
+                                <li><i class = "icon-star fas fa-star"></i></li>
+                                <li><i class = "icon-star fas fa-star"></i></li>
+                                <li><i class = "icon-star fas fa-star"></i></li>
+                                <li><i class = "icon-star fas fa-star-half-alt"></i></li>
+                                <li><i class="icon-star far fa-star"></i></li>
+                                <li class="text-review">&nbsp;536 reviews</li>
+                            </ul>
+                            <p class = "second-text">Vịnh Hạ Long có một vị trí địa lý rất khác biệt, nó được bao bọc bởi các đảo đá lớn nhỏ giúp cho mặt nước trong xanh, không khí mát mẻ dịu nhẹ, trong lành mang đến cảm giác thoải mái, thích hợp để du lịch trong những kì nghỉ dài ngày.</p>
+                        </div>
+                    </div>
+                    <div class = "popular-item shadow js-second-item">
+                        <img src = "images/Body-Hội An.jpg" alt = "">
+                        <div>
+                            <span class="first-text">
+                                <i class="icon-first-text fas fa-spa"></i>
+                                Phố Cổ Hội An, Quảng Nam
+                            </span>
+                            <ul class = "rating flex">
+                                <li><i class = "icon-star fas fa-star"></i></li>
+                                <li><i class = "icon-star fas fa-star"></i></li>
+                                <li><i class = "icon-star fas fa-star"></i></li>
+                                <li><i class = "icon-star fas fa-star"></i></li>
+                                <li><i class = "icon-star fas fa-star-half-alt"></i></li>
+                                <li class="text-review">&nbsp;400 reviews</li>
+                            </ul>
+                            <p class = "second-text">Đến nơi đây bạn sẽ bị hút hồn bởi nét đẹp hoài cổ. Không chỉ được khám phá những kiến trúc xưa cũ hay những cảnh quan thiên nhiên thơ mộng mà còn được thưởng thức những món ăn đặc sản “hài lòng khách đến, vừa lòng khách đi”.</p>
+                        </div>
+                    </div>
+                    <div class = "popular-item shadow js-second-item">
+                        <img src = "images/Body-Lăng Bác.jpg" alt = "">
+                        <div>
+                            <span class="first-text">
+                                <i class="icon-first-text fas fa-spa"></i>
+                                Lăng Bác, Hà Nội
+                            </span>
+                            <ul class = "rating flex">
+                                <li><i class = "icon-star fas fa-star"></i></li>
+                                <li><i class = "icon-star fas fa-star"></i></li>
+                                <li><i class = "icon-star fas fa-star"></i></li>
+                                <li><i class = "icon-star fas fa-star"></i></li>
+                                <li><i class = "icon-star fas fa-star"></i></li>
+                                <li class="text-review">&nbsp;561 reviews</li>
+                            </ul>
+                            <p class = "second-text">Lăng Bác là công trình có giá trị văn hóa lịch sử đặc biệt mà bất cứ người dân Việt Nam nào cũng nên tới một lần để tỏ lòng ngưỡng mộ tới vị cha già của dân tộc Việt Nam, người đã cống hiến cả cuộc đời vì dân vì đất nước tự do.</p>
+                        </div>
+                    </div>
+                    <div class = "popular-item shadow js-second-item">
+                        <img src = "images/Body-Sapa.jpg" alt = "">
+                        <div>
+                            <span class="first-text">
+                                <i class="icon-first-text fas fa-spa"></i>
+                                Sapa, Lào Cai
+                            </span>
+                            <ul class = "rating flex">
+                                <li><i class = "icon-star fas fa-star"></i></li>
+                                <li><i class = "icon-star fas fa-star"></i></li>
+                                <li><i class = "icon-star fas fa-star"></i></li>
+                                <li><i class = "icon-star fas fa-star-half-alt"></i></li>
+                                <li><i class="icon-star far fa-star"></i></li>
+                                <li class="text-review">&nbsp;448 reviews</li>
+                            </ul>
+                            <p class = "second-text">Điểm đặc biệt nơi đây là còn lưu giữ được nhưng nét hoang sơ và xa lạ của miền núi rừng Tây Bắc. Khí hậu quanh năm mát mẻ, cảnh đẹp và bình yên, mùa Đông còn có tuyết rơi rất đẹp. Và nơi đây có khá nhiều món ăn ngon và lạ miệng.</p>
+                        </div>
+                    </div>
+                    <div class = "popular-item shadow js-second-item">
+                        <img src = "images/Body-nhà thờ cũ.jpg" alt = "">
+                        <div>
+                            <span class="first-text">
+                                <i class="icon-first-text fas fa-spa"></i>
+                                Nhà Thờ Gỗ Kon Tum, Kon Tum
+                            </span>
+                            <ul class = "rating flex">
+                                <li><i class = "icon-star fas fa-star"></i></li>
+                                <li><i class = "icon-star fas fa-star"></i></li>
+                                <li><i class = "icon-star fas fa-star"></i></li>
+                                <li><i class = "icon-star fas fa-star"></i></li>
+                                <li><i class = "icon-star fas fa-star-half-alt"></i></li>
+                                <li class="text-review">&nbsp;516 reviews</li>
+                            </ul>
+                            <p class = "second-text">Nhà thờ gỗ Chính tòa Kon Tum – báu vật nằm giữa núi rừng Tây Nguyên bạt ngàn là một công trình kiến trúc tôn giáo rất độc đáo với tuổi đời lên đến hàng thế kỷ. Đây được xem là di tích cổ kính và đẹp nhất của thành phố xinh đẹp này.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- end of popular places section -->
+<!--================================================================================================================================================================================================================-->            
+    <!--================================================================================================================================================================================================================-->
+    <!--begin first gallery modal-->
+    <div class="first-modal-container">
+        <div class="gallery-modal galModal-1">
+            <img class="Header-img-modal" src="./images/gallery-3.jpg" alt="gallery img">  
+        </div>
+    
+        <div class="gallery-modal galModal-2">
+            <img class="Header-img-modal" src="./images/gallery-8.jpg" alt="gallery img">  
+        </div>
+    
+        <div class="gallery-modal galModal-3">
+            <img class="Header-img-modal" src="./images/Header-ba-na-hill-1.jpg" alt="gallery img">  
+        </div>
+    
+        <div class="gallery-modal galModal-4">
+            <img class="Header-img-modal" src="./images/Header-ba-na-hill-.jpg" alt="gallery img">  
+        </div>
+    
+        <div class="gallery-modal galModal-5">
+            <img class="Header-img-modal" src="./images/Header-unknow3.jpg" alt="gallery img">  
+        </div>
+    
+        <div class="gallery-modal galModal-6">
+            <img class="Header-img-modal" src="./images/Header-unknow.jpg" alt="gallery img">  
+        </div>
+    
+        <div class="gallery-modal galModal-7">
+            <img class="Header-img-modal" src="./images/Header-chùa 1 cột.jpg" alt="gallery img">  
+        </div>
+    
+        <div class="gallery-modal galModal-8">
+            <img class="Header-img-modal" src="./images/Header-unknow2.jpg" alt="gallery img">  
+        </div>
+    
+        <div class="gallery-modal galModal-9">
+            <img class="Header-img-modal" src="./images/Header-ruong bac thang 1.jpg" alt="gallery img">  
+        </div>
+    </div>
+    <!--end first gallery modal-->
+    <!--begin first gallery modal js-->
+    <script>
+        const clickImgs1 = document.querySelector('.js-gallery-img1')
+        const clickImgs2 = document.querySelector('.js-gallery-img2')
+        const clickImgs3 = document.querySelector('.js-gallery-img3')
+        const clickImgs4 = document.querySelector('.js-gallery-img4')
+        const clickImgs5 = document.querySelector('.js-gallery-img5')
+        const clickImgs6 = document.querySelector('.js-gallery-img6')
+        const clickImgs7 = document.querySelector('.js-gallery-img7')
+        const clickImgs8 = document.querySelector('.js-gallery-img8')
+        const clickImgs9 = document.querySelector('.js-gallery-img9')
+
+        const galModal1=document.querySelector('.galModal-1')
+        const galModal2=document.querySelector('.galModal-2')
+        const galModal3=document.querySelector('.galModal-3')
+        const galModal4=document.querySelector('.galModal-4')
+        const galModal5=document.querySelector('.galModal-5')
+        const galModal6=document.querySelector('.galModal-6')
+        const galModal7=document.querySelector('.galModal-7')
+        const galModal8=document.querySelector('.galModal-8')
+        const galModal9=document.querySelector('.galModal-9')
+        
+        const outImgs=document.querySelector('.first-modal-container')
+        const allImgmodals=document.querySelectorAll('.gallery-modal')
+        function outimg(){
+            for( const allImgmodal of  allImgmodals){
+                allImgmodal.classList.remove('open-gallery-modal')
+            }
+        }
+
+        outImgs.addEventListener('click',outimg)
+        function openimg1(){
+            galModal1.classList.add('open-gallery-modal')
+        }
+        function openimg2(){
+            galModal2.classList.add('open-gallery-modal')
+        }
+        function openimg3(){
+            galModal3.classList.add('open-gallery-modal')
+        }
+        function openimg4(){
+            galModal4.classList.add('open-gallery-modal')
+        }
+        function openimg5(){
+            galModal5.classList.add('open-gallery-modal')
+        }
+        function openimg6(){
+            galModal6.classList.add('open-gallery-modal')
+        }
+        function openimg7(){
+            galModal7.classList.add('open-gallery-modal')
+        }
+        function openimg8(){
+            galModal8.classList.add('open-gallery-modal')
+        }
+        function openimg9(){
+            galModal9.classList.add('open-gallery-modal')
+        }
+
+            clickImgs1.addEventListener('click',openimg1)
+            clickImgs2.addEventListener('click',openimg2)
+            clickImgs3.addEventListener('click',openimg3)
+            clickImgs4.addEventListener('click',openimg4)
+            clickImgs5.addEventListener('click',openimg5)
+            clickImgs6.addEventListener('click',openimg6)
+            clickImgs7.addEventListener('click',openimg7)
+            clickImgs8.addEventListener('click',openimg8)
+            clickImgs9.addEventListener('click',openimg9)
+    
+    </script>
+    <!--end first gallery modal js-->
+
+
+
+
+
+    <!--begin second gallery modal-->
+    <div class="second-modal-container js-second-modal-container">
+        <div class="submit-modal js-submit-modal"  >
+            <div class="modal-close js-modal-close">
+                <i class="gal-close fas fa-times"></i>
+            </div>
+
+            <div class="modal-header">
+                <i class="fas fa-luggage-cart"></i>
+                Xách Ba-lô Và Đi Nào.....
+                <p class="modal-header-detail" >Cảm ơn bạn đã tin tưởng dịch vụ của chúng tôi, hãy điền những thông tin còn thiếu cuối cùng để chuẩn bị cho cuộc hành trình.</p>
+            </div>
+            <div class="modal-body" onmousemove="autoCalculate()">
+                <label for="checkNumber" class="modal-label">
+                    <i class="icon-detail fas fa-users"></i>
+                    Số người tham gia chuyến đi này ?
+                </label>
+
+                <div class="error-box-main">
+                    <input id="checkNumber" type="number" class="modal-input" placeholder="tối đa 10 người " onmouseleave="autoCalculate()">
+                    <div class="error-box"> <p id="error"></p></div>
+                </div>
+
+                
+                <div class="all-pay-list">
+                    <div class="modal-card-item ">
+                        <div class="modal-label">
+                            <i class="icon-detail fas fa-hand-holding-usd"></i>
+                            Vui lòng chọn phương thức thanh toán:
+                        </div>
+                        <div class="modal-card">
+                            <input id="checkCard card1" name="pay" type="radio" onclick="autoCalculate()">
+                            <label for="checkCard card1"><i class="card-icon fab fa-cc-visa"></i></label>
+                            <label for="checkCard card1"> thanh toán bằng thẻ Visa</label>
+                        </div>    
+                        <div class="modal-card">
+                            <input id="checkCard card2" name="pay" type="radio" onclick="autoCalculate()">
+                            <label for="checkCard card2"><i class="card-icon fab fa-cc-mastercard"></i></label>
+                            <label for="checkCard card2">thanh toán bằng thẻ Mastercard</label>
+                        </div>    
+                        <div class="modal-card">
+                            <input id="checkCard card3" name="pay" type="radio" onclick="autoCalculate()">
+                            <label for="checkCard card3"><i class="card-icon fab fa-cc-paypal"></i></label>
+                            <label for="checkCard card3">thanh toán bằng Paypal</label>
+                        </div>    
+                        <div class="modal-card">
+                            <input id="checkCard card4" name="pay" type="radio" onclick="autoCalculate()">
+                            <label for="checkCard card4"><i class="card-icon fab fa-cc-amazon-pay"></i></label>
+                            <label for="checkCard card4">thanh toán bằng Amazon pay</label>
+                        </div>    
+                        <div class="modal-card">
+                            <input id="checkCard card5" name="pay" type="radio" onclick="autoCalculate()">
+                            <label for="checkCard card5"><i class="card-icon far fa-credit-card"></i></label>
+                            <label for="checkCard card5">thanh toán bằng thẻ tín dụng khác</label>
+                        </div>                          
+                    </div>
+                    <div class="select-place">
+                        <div class="select-place-detail">
+                            <i class="icon-detail fas fa-map-marker-alt"></i>
+                            Nơi bạn muốn đến:
+                        </div>
+                        <select name="choose-place" id="place-modal" onclick="autoCalculate()">
+                            <option value="1"> 345.000đ/1 người | Tam Cốc Bích Động, Ninh Bình</option>
+                            <option value="2"> 549.000đ/1 người | Hang Động Sơn Đoòng, Quảng Bình</option>
+                            <option value="3"> 213.000đ/1 người | Thác Bản Giốc, Cao Bằng</option>
+                            <option value="4"> 457.000đ/1 người | Bãi Biển Nha Trang, Nha Trang</option>
+                            <option value="5"> 315.000đ/1 người | Chùa Thiên Mụ, Huế</option>
+                            <option value="6"> 300.000đ/1 người | Đại Nội Kinh Thành Huế, Huế</option>
+                            <option value="7"> 450.000đ/1 người | Đồi Hoa Đà Lạt, Đà Lạt</option>
+                            <option value="8"> 250.000đ/1 người | Vịnh Hạ Long, Quảng Ninh</option>
+                            <option value="9"> 210.000đ/1 người | Phố Cổ Hội An, Quảng Nam</option>
+                            <option value="10"> 230.000đ/1 người | Lăng Bác, Hà Nội</option>
+                            <option value="11"> 301.000đ/1 người | Sapa, Lào Cai</option>
+                            <option value="12"> 345.000đ/1 người | Nhà Thờ Gỗ Kon Tum, Kon Tum</option>
+                        </select>
+                        <div class="total-list">
+                            <div class="row">
+                                <div class="col Amount">
+                                    <i class="icon-money fas fa-circle"></i>
+                                    Thành Tiền:
+                                </div>
+                                <div class="col color-amount"><p  id="amount"></p></div>
+                            </div>
+                            <div class="row">
+                                <div class="col tax">
+                                    <i class="icon-money fas fa-circle"></i>
+                                    Thuế (10%):
+                                </div>
+                                <div class="col color-tax"><p id="tax"></p></div>
+                            </div>
+                            <div class="row">
+                                <div class="col total-money">
+                                    <i class="icon-detail fas fa-donate"></i>
+                                    Tổng Tiền:
+                                </div>
+                                <div class="col total-money2"><p id="total-money">0</p></div>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    
+                </div>
+                
+                <div class="modal-btn-item">
+                    <div class="pay-error-box"><p id="pay-error"></p></div>  
+                    <button class="modal-btn" onclick="checkquantity()">
+                        Pay
+                        <i class="fas fa-check"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <p>Need <a href="https://t.co/IYlMGq6AwB?amp=1">help?</a></p>
+            </div>
+        </div>
+
+    </div>
+    <!--end second gallery modal-->  
+
+
+
+    <!--begin second gallery modal js--> 
+        <script>
+            const secondItems=document.querySelectorAll('.js-second-item')
+            const secondPlace=document.querySelector('.js-second-modal-container')
+            const modalClose=document.querySelector('.js-modal-close')
+            
+            const submitModal=document.querySelector('.js-submit-modal')
+            function openSecondModal() {
+                secondPlace.classList.add('openBtn')
+            }
+
+            for( const secondItem of secondItems){
+                secondItem.addEventListener('click',openSecondModal)
+            }
+            function resetInput(){
+                secondPlace.classList.remove('openBtn');
+                document.getElementById('checkNumber').value='';
+                document.getElementById("error").innerHTML="";
+                document.getElementById("pay-error").innerHTML="";
+                document.getElementById("amount").innerHTML="";
+                document.getElementById("tax").innerHTML="";
+                document.getElementById("total-money").innerHTML="";
+                
+
+                var checkInput=document.getElementsByName("pay");
+
+                for (var i=0;i<checkInput.length;i++){
+                    checkInput[i].checked=false;
+                }
+            }
+            modalClose.addEventListener('click',resetInput)
+            secondPlace.addEventListener('click',resetInput)
+            
+            submitModal.addEventListener('click',function(event){event.stopPropagation()})
+        </script>
+
+    <!--end second gallery modal js--> 
+
+    <!--begin check-->
+    <script>
+    const removeCheck1=document.querySelector('.modal-input')
+    const removeChecks2=document.querySelectorAll('.modal-card')
+
+    function resetMoney1(){
+        document.getElementById("error").innerHTML="";
+        document.getElementById('checkNumber').value='';
+        document.getElementById("amount").innerHTML="";
+        document.getElementById("tax").innerHTML="";
+        document.getElementById("total-money").innerHTML="";
+    }
+
+    removeCheck1.addEventListener('click',resetMoney1)
+
+    function resetMoney2(){
+        document.getElementById("pay-error").innerHTML="";
+    }
+    for( const removeCheck2 of removeChecks2){
+        removeCheck2.addEventListener('click',resetMoney2)    
+    }
+
+    function checkquantity(){
+        var x=document.getElementById("checkNumber").value ;
+        if (x==""){document.getElementById("error").innerHTML="Vui lòng nhập số người tham gia !" }
+        else {
+            x=parseFloat(x);
+            if (x<=0 || x>10){
+                document.getElementById("error").innerHTML="Chỉ giới hạn trong khoảng 10 người !";
+            }
+            else {
+                document.getElementById("error").innerHTML="";
+            }
+        }    
+ 
+        var checkInput=document.getElementsByName("pay");
+        var check1=false;
+
+        for (var i=0;i<checkInput.length;i++){
+            if (checkInput[i].checked == true){
+                check1=true;break;
+            }
+        }
+        if (check1==false){document.getElementById("pay-error").innerHTML="Vui lòng chọn phương thức thanh toán !"}
+        if (check1==true){document.getElementById("pay-error").innerHTML=""}
+        
+        if (x>0 && x<=10 && check1==true){
+            alert("Dịch bệnh thì tràn lan, đi cc! Để tiền mà đi chơi Noel với ny.")
+        }
+        }
+
+      function autoCalculate() {
+        var x=document.getElementById("checkNumber").value ;
+        if (x==""){document.getElementById("error").innerHTML="Vui lòng nhập số người tham gia !" }
+        else {
+            x=parseFloat(x);
+            if (x<=0 || x>10){
+                document.getElementById("error").innerHTML="Chỉ giới hạn trong khoảng 10 người !";
+            }
+            else {
+                document.getElementById("error").innerHTML="";
+            }
+        }    
+ 
+        var checkInput=document.getElementsByName("pay");
+        var check1=false;
+
+        for (var i=0;i<checkInput.length;i++){
+            if (checkInput[i].checked == true){
+                check1=true;break;
+            }
+        }
+        if (check1==false){document.getElementById("pay-error").innerHTML="Vui lòng chọn phương thức thanh toán !"}
+        if (check1==true){document.getElementById("pay-error").innerHTML=""}
+
+        
+        if (x>0 && x<=10 && check1==true){
+            let money=document.getElementById("place-modal").value;
+            var amountz=0;
+            var taxz=0;
+            var moneyzz=0;
+                if(money=="1"){
+                    amountz=x*345000;
+                    taxz=(amountz*10)/100;
+                    moneyzz=amountz+taxz;
+                    
+                document.getElementById("amount").innerHTML=(amountz+" VNĐ");
+                document.getElementById("tax").innerHTML=("+ "+taxz+" VNĐ");
+                document.getElementById("total-money").innerHTML=(moneyzz+" VNĐ");
+                 }
+                 if(money=="2"){
+                    amountz=x*549000;
+                    taxz=(amountz*10)/100;
+                    moneyzz=amountz+taxz;
+                    
+                document.getElementById("amount").innerHTML=(amountz+" VNĐ");
+                document.getElementById("tax").innerHTML=("+ "+taxz+" VNĐ");
+                document.getElementById("total-money").innerHTML=(moneyzz+" VNĐ");
+                 }
+                 if(money=="3"){
+                    amountz=x*213000;
+                    taxz=(amountz*10)/100;
+                    moneyzz=amountz+taxz;
+                    
+                document.getElementById("amount").innerHTML=(amountz+" VNĐ");
+                document.getElementById("tax").innerHTML=("+ "+taxz+" VNĐ");
+                document.getElementById("total-money").innerHTML=(moneyzz+" VNĐ");
+                 }
+                 if(money=="4"){
+                    amountz=x*457000;
+                    taxz=(amountz*10)/100;
+                    moneyzz=amountz+taxz;
+                    
+                document.getElementById("amount").innerHTML=(amountz+" VNĐ");
+                document.getElementById("tax").innerHTML=("+ "+taxz+" VNĐ");
+                document.getElementById("total-money").innerHTML=(moneyzz+" VNĐ");
+                 }
+                 if(money=="5"){
+                    amountz=x*315000;
+                    taxz=(amountz*10)/100;
+                    moneyzz=amountz+taxz;
+                    
+                document.getElementById("amount").innerHTML=(amountz+" VNĐ");
+                document.getElementById("tax").innerHTML=("+ "+taxz+" VNĐ");
+                document.getElementById("total-money").innerHTML=(moneyzz+" VNĐ");
+                 }
+                 if(money=="6"){
+                    amountz=x*300000;
+                    taxz=(amountz*10)/100;
+                    moneyzz=amountz+taxz;
+                    
+                document.getElementById("amount").innerHTML=(amountz+" VNĐ");
+                document.getElementById("tax").innerHTML=("+ "+taxz+" VNĐ");
+                document.getElementById("total-money").innerHTML=(moneyzz+" VNĐ");
+                 }
+                 if(money=="7"){
+                    amountz=x*450000;
+                    taxz=(amountz*10)/100;
+                    moneyzz=amountz+taxz;
+                    
+                document.getElementById("amount").innerHTML=(amountz+" VNĐ");
+                document.getElementById("tax").innerHTML=("+ "+taxz+" VNĐ");
+                document.getElementById("total-money").innerHTML=(moneyzz+" VNĐ");
+                 }
+                 if(money=="8"){
+                    amountz=x*250000;
+                    taxz=(amountz*10)/100;
+                    moneyzz=amountz+taxz;
+                    
+                document.getElementById("amount").innerHTML=(amountz+" VNĐ");
+                document.getElementById("tax").innerHTML=("+ "+taxz+" VNĐ");
+                document.getElementById("total-money").innerHTML=(moneyzz+" VNĐ");
+                 }
+                 if(money=="9"){
+                    amountz=x*210000;
+                    taxz=(amountz*10)/100;
+                    moneyzz=amountz+taxz;
+                    
+                document.getElementById("amount").innerHTML=(amountz+" VNĐ");
+                document.getElementById("tax").innerHTML=("+ "+taxz+" VNĐ");
+                document.getElementById("total-money").innerHTML=(moneyzz+" VNĐ");
+                 }
+                 if(money=="10"){
+                    amountz=x*230000;
+                    taxz=(amountz*10)/100;
+                    moneyzz=amountz+taxz;
+                    
+                document.getElementById("amount").innerHTML=(amountz+" VNĐ");
+                document.getElementById("tax").innerHTML=("+ "+taxz+" VNĐ");
+                document.getElementById("total-money").innerHTML=(moneyzz+" VNĐ");
+                 }
+                 if(money=="11"){
+                    amountz=x*301000;
+                    taxz=(amountz*10)/100;
+                    moneyzz=amountz+taxz;
+                    
+                document.getElementById("amount").innerHTML=(amountz+" VNĐ");
+                document.getElementById("tax").innerHTML=("+ "+taxz+" VNĐ");
+                document.getElementById("total-money").innerHTML=(moneyzz+" VNĐ");
+                 }
+                 if(money=="12"){
+                    amountz=x*345000;
+                    taxz=(amountz*10)/100;
+                    moneyzz=amountz+taxz;
+                    
+                document.getElementById("amount").innerHTML=(amountz+" VNĐ");
+                document.getElementById("tax").innerHTML=("+ "+taxz+" VNĐ");
+                document.getElementById("total-money").innerHTML=(moneyzz+" VNĐ");;
+                 }
+        
+        }
+    }
+    </script>
+    <!--end check-->
+<!--================================================================================================================================================================================================================-->
+<!--================================================================================================================================================================================================================-->
+<!--================================================================================================================================================================================================================-->
+        <!-- footer -->
+        <footer class = "py-4">
+            <div class = "container footer-row">
+                <div class = "footer-item">
+                    <a href = "home.html" class = "site-brand">
+                        Trip<span>Cheap</span>
+                    </a>
+                    <p class = "text">This is a travel website that our team of 14 has created and developed. Thank you for your comments <i class="fa fa-heart" style="font-size:20px;color:red;text-shadow:2px 2px 4px #000000;"></i></p>
+                </div>
+    
+                <div class = "footer-item">
+                    <h2>Follow us on: </h2>
+                    <ul class = "social-links">
+                        <li>
+                            <a href = "#">
+                                <i class = "fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href = "#">
+                                <i class = "fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href = "#">
+                                <i class = "fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href = "#">
+                                <i class = "fab fa-pinterest"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href = "#">
+                                <i class = "fab fa-google-plus"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class = "footer-item">
+                    <h2>Our services:</h2>
+                    <ul>
+                        <li><a href = "home.html">Home</a></li>
+                        <li><a href = "gallery.html">Gallery</a></li>
+                        <li><a href = "blog.html">Blog</a></li>
+                        <li><a href = "about.html">About</a></li>
+                        <li><a href = "contact.html">Contact</a></li>
+                    </ul>
+                </div>
+    
+                <div class = "subscribe-form footer-item">
+                    <h2>Subscribe for Team 14</h2>
+                    <form class = "flex">
+                        <input type = "email" placeholder="Enter Email" class = "form-control">
+                        <input type = "submit" class = "btn" value = "Subscribe">
+                    </form>
+                </div>
+            </div>
+        </footer>
+        <!-- end of footer -->
+    
+        <!--================================================================================================================================================================================================================-->
+
+    <!-- js -->
+    <script src = "js/script.js"></script>
+    <script>
+        // play/pause video
+        let video = document.querySelector('.video-wrapper video');
+        document.getElementById('play-btn').addEventListener('click', () => {
+            if(video.paused){
+                video.play();
+            } else {
+                video.pause();
+            }
+        });
+    </script>
+</body>
+</html>
