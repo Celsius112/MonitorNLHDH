@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>FoodCheap</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- font awesome cdn -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- fonts -->
+        <link rel = "stylesheet" href = "font/fonts.css">
+        <!-- normalize css -->
+        <link rel = "stylesheet" href = "css/normalize.css">
+        <!-- custom css -->
+        <link rel = "stylesheet" href = "css/utility.css">
+        <link rel = "stylesheet" href = "css/style.css">
+        <link rel = "stylesheet" href = "css/responsive.css">
+        
+    </head>
+    <body>
+        <!-- navbar  -->
+        <nav class = "navbar">
+            <div class = "container flex">
+                <a href = "home.html" class = "site-brand">
+                    Trip<span>Cheap</span>
+                </a>
+
+                <button type = "button" id = "navbar-show-btn" class = "flex">
+                    <i class = "fas fa-bars"></i>
+                </button>
+                <div id = "navbar-collapse">
+                    <button type = "button" id = "navbar-close-btn" class = "flex">
+                        <i class = "fas fa-times"></i>
+                    </button>
+                    <ul class = "navbar-nav">
+                        <li class = "nav-item">
+                            <a href = "home.html" class = "nav-link">Home</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "gallery.html" class = "nav-link">Restaurant</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "gallery.html" class = "nav-link">Dishes</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "gallery.html" class = "nav-link">Chief</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "blog.html" class = "nav-link">BLog</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "about.html" class = "nav-link">About</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "contact.html" class = "nav-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- end of navbar  -->
+
+        <!-- header -->
+        <header class = "flex">
+            <div class = "container">
+                <div class = "header-title">
+                    <h1>Leave Your Footprints</h1>
+                    <p>Điền thông tin</p>
+                </div>
+                <div class = "header-form">
+                    <h2>chọn địa điểm du lịch của bạn:</h2>
+                    <form class = "flex">
+                        <input type = "text" class = "form-control" placeholder="Destination name">
+                        <input type="date" class = "form-control" placeholder="Date">
+                        <input type="number" class = "form-control" placeholder="Price (Đồng)">
+                        <input type="submit" class = "btn" value = "Search" >
+                    </form>
+                </div>
+            </div>
+        </header>
+        <!-- header -->
+
+        <!-- featured section -->
+        <section id = "featured" class = "py-4">
+            <div class = "container">
+                <div class = "title-wrap">
+                    <span class = "sm-title" style="color: #1cb9aa;">Đầu Tiên Bạn Hãy Tìm Hiểu Trước Về Một Số Địa Điểm Nổi Tiếng Trong Thời Gian Vừa Qua</span>
+                    <h2 class = "lg-title">ĐÂY LÀ MỘT SỐ ĐỊA ĐIỂM TUYỆT VỜI MÀ CHÚNG TÔI MUỐN GIỚI THIỆU CHO BẠN</h2>
+                </div>
+
+                <div class = "featured-row">
+                    <div class = "featured-item my-2 shadow">
+                        <img src = "./images/picture1.jpeg" alt = "featured place">
+                        <div class = "featured-item-content featured-item-content1">
+                            <span>
+                                <i class = "icon-place-home fas fa-map-marker-alt"></i>
+                                Vẻ đẹp hùng vĩ của Hang Sơn Đoòng 
+                            </span>
+                            <div>
+                                <p class = "text">Hang Sơn Đoòng được coi là hang động tự nhiên lớn nhất thế giới được sách kỉ lục ghi nhận, đây là một địa điểm du lịch hấp dẫn Việt Nam. </p>
+                                <a class = "button-see-more"href="https://vi.wikipedia.org/wiki/Hang_S%C6%A1n_%C4%90o%C3%B2ng">Xem thêm</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "featured-item my-2 shadow">
+                        <img src ="images/picture2.jpeg" alt = "featured place">
+                        <div class = "featured-item-content featured-item-content2">
+                            <span>
+                                <i class = "icon-place-home fas fa-map-marker-alt"></i>
+                                Bãi biển nha trang thơ mộng
+                            </span>
+                            <div>
+                                <p class = "text">Cảnh đẹp Nha Trang luôn thuộc top những cảnh đẹp về biển bậc nhất trên thế giới và là một trong những bãi biển sạch và dài nhất tại việt Nam.</p>
+                                <a class = "button-see-more"href="https://vi.wikipedia.org/w/index.php?search=bi%E1%BB%83n+nha+trang&title=%C4%90%E1%BA%B7c_bi%E1%BB%87t:T%C3%ACm_ki%E1%BA%BFm&profile=advanced&fulltext=1&ns0=1">Xem thêm</a>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "featured-item my-2 shadow">
+                        <img src = "images/picture3.jpeg" alt = "featured place">
+                        <div class = "featured-item-content featured-item-content3">
+                            <span>
+                                <i class = "icon-place-home fas fa-map-marker-alt"></i>
+                                Vẻ đẹp ruộng bậc thang chắc chắn sẽ níu chân bạn
+                            </span>
+                            <div>
+                                <p class = "text">Ruộng bậc thang được xem là di tích quốc gia như là một trong những danh thắng độc đáo bậc nhất tại Việt Nam.</p>
+                                <a class = "button-see-more"href="https://vi.wikipedia.org/wiki/Ru%E1%BB%99ng_b%E1%BA%ADc_thang_M%C3%B9_Cang_Ch%E1%BA%A3i">Xem thêm</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "featured-item my-2 shadow">
+                        <img src = "images/picture4.jpeg" alt = "featured place">
+                        <div class = "featured-item-content featured-item-content4">
+                            <span>
+                                <i class = "icon-place-home fas fa-map-marker-alt"></i>
+                                Vẻ đẹp tựa thiên đàng trên Cầu Vàng- Bà Nà
+                            </span>
+                            <div>
+                                <p class = "text">Cầu Vàng đứng ở vị trí đầu tiên trong danh sách kỳ quan thế giới mới năm 2021.</p>
+                                <a class = "button-see-more"href="https://vnexpress.net/cau-vang-va-cau-chuyen-du-lich-viet-nam-vuon-tam-the-gioi-3915962.html">Xem thêm</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "featured-item my-2 shadow">
+                        <img src = "images/picture5.jpeg" alt = "featured place">
+                        <div class = "featured-item-content featured-item-content5">
+                            <span>
+                                <i class = "icon-place-home fas fa-map-marker-alt"></i>
+                                Vịnh Hạ Long xứ sở bình yên và tươi đẹp của Đông Dương
+                            </span>
+                            <div>
+                                <p class = "text">Vịnh Hạ Long là một di sản thiên nhiên thế giới và là 1 trong 7 kỳ quan thiên nhiên thế giới ghi dấu những di tích lịch sử Việt Nam.</p>
+                                <a class = "button-see-more"href="https://dulichhalongquangninh.com/hinh-anh-dep-nhat-vinh-ha-long/">Xem thêm</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "featured-item my-2 shadow">
+                        <img src = "images/picture6.jpeg" alt = "featured place">
+                        <div class = "featured-item-content featured-item-content6">
+                            <span>
+                                <i class = "icon-place-home fas fa-map-marker-alt"></i>
+                                Sự lôi quấn của vùng biển đảo xinh đẹp Côn Đảo
+                            </span>
+                            <div>
+                                <p class = "text">Nhắc tới những hòn đảo đẹp nhất, thì không thể bỏ qua cái tên Côn Đảo. Nơi đây thu hút khách du lịch bởi cảnh sắc thiên nhiên hữu tình.</p>
+                                <a class = "button-see-more"href="https://www.ivivu.com/blog/2017/03/du-lich-con-dao-nhat-dinh-phai-ghi-nho-6-khu-nghi-duong-o-la-me-nay/">Xem thêm</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end of featured section -->
+
+        <!-- services section -->
+        <section id = "services" class = "py-4">
+            <div class = "container">
+                <div class = "title-wrap">
+                    <span class = "sm-title">ĐÂY LÀ MỘT SỐ DỊCH VỤ MÀ CHÚNG TÔI CÓ THỂ ĐEM TỚI CHO BẠN</span>
+                    <h2 class = "lg-title">dịch vụ bao gồm</h2>
+                </div>
+
+                <div class = "services-row">
+                    <div class = "services-item">
+                        <span class = "services-icon">
+                            <i class = "fas fa-hotel"></i>
+                        </span>
+                        <h3>KHÁCH SẠN SANG TRỌNG</h3>
+                        <p class = "text">Luôn Là Nơi Tốt Nhất, Đẹp Nhất</p>
+                        <a href = "https://www.traveloka.com/vi-vn/hotel" class = "btn">Read more</a>
+                    </div>
+
+                    <div class = "services-item">
+                        <span class = "services-icon">
+                            <i class = "fas fa-map-marked-alt"></i>
+                        </span>
+                        <h3>HƯỚNG DẪN VIÊN</h3>
+                        <p class = "text">Tận Tình - Chu Đáo - Biết Lắng Nghe</p>
+                        <a href = "https://www.facebook.com/eimifukadajapan" class = "btn">Read more</a>
+                    </div>
+
+                    <div class = "services-item">
+                        <span class = "services-icon">
+                            <i class = "fas fa-money-bill"></i>
+                        </span>
+                        <h3>GIÁ PHÙ HỢP</h3>
+                        <p class = "text">Không Bao Giờ Phải Sao Kê</p>
+                        <a href = "https://dulichviet.com.vn/du-lich-trong-nuoc" class = "btn">Read more</a>
+                    </div>
+                    <div class = "services-item">
+                        <span class = "services-icon">
+                            <i class="fas fa-plane-departure"></i>
+                        </span>
+                        <h3>HỖ TRỢ PHƯƠNG TIỆN</h3>
+                        <p class = "text">Phương Tiện Di Chuyển Luôn Tốt Nhất</p>
+                        <a href = "https://www.traveloka.com/vi-vn/airport-transfer" class = "btn">Read more</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end of services section -->
+
+        <!-- testimonials section -->
+        <section id = "testimonials" class = "py-4">
+            <div class = "container">
+                <div class = "title-wrap">
+                    <span class = "sm-title" style="color: #1cb9aa;">đây là một số đánh giá mà khách hàng đã nói về chúng tôi</span>
+                    <h2 class = "lg-title">chần chờ gì nữa đặt lịch ngay thôi</h2>
+                </div>
+
+                <div class = "test-row">
+                    <div class = "test-item">
+                        <p class = "text">Tôi đến từ brazil và tôi thấy những địa điểm của các bạn thật tuyệt vời, giống như quê nhà mình vậy </p>
+                        <!-- <div id="rating">
+                            <input type="radio" id="star5" name="rating" value="5" />
+                            <label class = "full" for="star5" title="Awesome - 5 stars"></label>
+                         
+                            <input type="radio" id="star4" name="rating" value="4" />
+                            <label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+                         
+                            <input type="radio" id="star3" name="rating" value="3" />
+                            <label class = "full" for="star3" title="Meh - 3 stars"></label>
+                         
+                            <input type="radio" id="star2" name="rating" value="2" />
+                            <label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+                         
+                            <input type="radio" id="star1" name="rating" value="1" />
+                            <label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+                        </div> -->
+                        <div class = "test-item-info">
+                            <img src = "images/test-1.jpg" alt = "testimonial">
+                            <div>
+                                <h3>Kevin Wilson</h3>
+                                <p class = "text">Trip to Brazil</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "test-item">
+                        <p class = "text">Ồ thông tin thật bổ ích, một trang web thật tuyệt ! </p>
+                        <!-- <div id="rating">
+                            <input type="radio" id="star5" name="rating" value="5" />
+                            <label class = "full" for="star5" title="Awesome - 5 stars"></label>
+                         
+                            <input type="radio" id="star4" name="rating" value="4" />
+                            <label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+                         
+                            <input type="radio" id="star3" name="rating" value="3" />
+                            <label class = "full" for="star3" title="Meh - 3 stars"></label>
+                         
+                            <input type="radio" id="star2" name="rating" value="2" />
+                            <label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+                         
+                            <input type="radio" id="star1" name="rating" value="1" />
+                            <label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+                        </div> -->
+                        <div class = "test-item-info">
+                            <img src = "images/test-2.jpg" alt = "testimonial">
+                            <div>
+                                <h3>Ben Davis</h3>
+                                <p class = "text">Trip to Maldives</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "test-item">
+                        <p class = "text">Chắc chắn tôi sẽ đến Sơn Đoòng</p>
+                        <!-- <div id="rating">
+                            <input type="radio" id="star5" name="rating" value="5" />
+                            <label class = "full" for="star5" title="Awesome - 5 stars"></label>
+                         
+                            <input type="radio" id="star4" name="rating" value="4" />
+                            <label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+                         
+                            <input type="radio" id="star3" name="rating" value="3" />
+                            <label class = "full" for="star3" title="Meh - 3 stars"></label>
+                         
+                            <input type="radio" id="star2" name="rating" value="2" />
+                            <label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+                         
+                            <input type="radio" id="star1" name="rating" value="1" />
+                            <label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+                        </div> -->
+                        <div class = "test-item-info">
+                            <img src = "images/test-3.jpg" alt = "testimonial">
+                            <div>
+                                <h3>Jaura Jones</h3>
+                                <p class = "text">Trip to Thailand</p>
+                            </div>
+                        </div>
+                    </div>           
+                </div>
+            </div>
+        </section>
+        <!-- end of testimonials section -->
+
+        <!-- video section -->
+        <section id = "video">
+            <div class = "video-wrapper flex">
+                <video loop>
+                    <source src = "videos/video-section.mp4" type = "video/mp4">
+                </video>
+                <button type = "button" id = "play-btn">
+                    <i class = "fas fa-play"></i>
+                </button>
+            </div>
+        </section>
+        <!-- end of video section -->
+
+        <!-- footer -->
+        <footer class = "py-4">
+            <div class = "container footer-row">
+                <div class = "footer-item">
+                    <a href = "home.html" class = "site-brand">
+                        Trip<span>Cheap</span>
+                    </a>
+                    <p class = "text">This is a travel website that our team of 14 has created and developed. Thank you for your comments <i class="fa fa-heart" style="font-size:20px;color:red;text-shadow:2px 2px 4px #000000;"></i></p>
+                </div>
+    
+                <div class = "footer-item">
+                    <h2>Follow us on: </h2>
+                    <ul class = "social-links">
+                        <li>
+                            <a href = "#">
+                                <i class = "fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href = "#">
+                                <i class = "fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href = "#">
+                                <i class = "fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href = "#">
+                                <i class = "fab fa-pinterest"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href = "#">
+                                <i class = "fab fa-google-plus"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class = "footer-item">
+                    <h2>Our services:</h2>
+                    <ul>
+                        <li><a href = "home.html">Home</a></li>
+                        <li><a href = "gallery.html">Gallery</a></li>
+                        <li><a href = "blog.html">Blog</a></li>
+                        <li><a href = "about.html">About</a></li>
+                        <li><a href = "contact.html">Contact</a></li>
+                    </ul>
+                </div>
+    
+                <div class = "subscribe-form footer-item">
+                    <h2>Subscribe for Team 14</h2>
+                    <form class = "flex">
+                        <input type = "email" placeholder="Enter Email" class = "form-control">
+                        <input type = "submit" class = "btn" value = "Subscribe">
+                    </form>
+                </div>
+            </div>
+        </footer>
+        <!-- end of footer -->
+
+        <!-- js -->
+        <script src = "js/script.js"></script>
+        <script>
+            // play/pause video
+            let video = document.querySelector('.video-wrapper video');
+            document.getElementById('play-btn').addEventListener('click', () => {
+                if(video.paused){
+                    video.play();
+                } else {
+                    video.pause();
+                }
+            });
+        </script>
+    </body>
+</html>
